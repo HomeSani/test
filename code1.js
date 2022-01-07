@@ -13,7 +13,21 @@ gdjs.MenuCode.condition0IsTrue_0 = {val:false};
 gdjs.MenuCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDPlayObjects1Objects = Hashtable.newFrom({"Play": gdjs.MenuCode.GDPlayObjects1});gdjs.MenuCode.eventsList0 = function(runtimeScene) {
+gdjs.MenuCode.userFunc0x6c6d20 = function(runtimeScene) {
+"use strict";
+vkBridge.send('VKWebAppInit');
+};
+gdjs.MenuCode.eventsList0 = function(runtimeScene) {
+
+{
+
+
+gdjs.MenuCode.userFunc0x6c6d20(runtimeScene);
+
+}
+
+
+};gdjs.MenuCode.mapOfGDgdjs_46MenuCode_46GDPlayObjects1Objects = Hashtable.newFrom({"Play": gdjs.MenuCode.GDPlayObjects1});gdjs.MenuCode.eventsList1 = function(runtimeScene) {
 
 {
 
@@ -40,7 +54,10 @@ gdjs.copyArray(runtimeScene.getObjects("Play"), gdjs.MenuCode.GDPlayObjects1);
 }{for(var i = 0, len = gdjs.MenuCode.GDAddFriendObjects1.length ;i < len;++i) {
     gdjs.MenuCode.GDAddFriendObjects1[i].setX(gdjs.evtTools.window.getGameResolutionWidth(runtimeScene) / 2);
 }
-}}
+}
+{ //Subevents
+gdjs.MenuCode.eventsList0(runtimeScene);} //End of subevents
+}
 
 }
 
@@ -73,7 +90,7 @@ gdjs.MenuCode.GDBestScoreObjects2.length = 0;
 gdjs.MenuCode.GDAddFriendObjects1.length = 0;
 gdjs.MenuCode.GDAddFriendObjects2.length = 0;
 
-gdjs.MenuCode.eventsList0(runtimeScene);
+gdjs.MenuCode.eventsList1(runtimeScene);
 return;
 
 }

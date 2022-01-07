@@ -144,10 +144,8 @@ gdjs.GameCode.condition0IsTrue_0.val = gdjs.evtTools.variable.getVariableNumber(
 }
 
 
-};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.GameCode.GDPlayerObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDAsteroidObjects2Objects = Hashtable.newFrom({"Asteroid": gdjs.GameCode.GDAsteroidObjects2});gdjs.GameCode.userFunc0x6b0520 = function(runtimeScene) {
+};gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDPlayerObjects2Objects = Hashtable.newFrom({"Player": gdjs.GameCode.GDPlayerObjects2});gdjs.GameCode.mapOfGDgdjs_46GameCode_46GDAsteroidObjects2Objects = Hashtable.newFrom({"Asteroid": gdjs.GameCode.GDAsteroidObjects2});gdjs.GameCode.userFunc0x6b06b0 = function(runtimeScene) {
 "use strict";
-vkBridge.send('VKWebAppInit');
-
 vkBridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
 
 vkBridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
@@ -160,7 +158,7 @@ gdjs.GameCode.eventsList5 = function(runtimeScene) {
 {
 
 
-gdjs.GameCode.userFunc0x6b0520(runtimeScene);
+gdjs.GameCode.userFunc0x6b06b0(runtimeScene);
 
 }
 
